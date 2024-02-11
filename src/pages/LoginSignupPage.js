@@ -70,7 +70,7 @@ const LoginSignupPage = () => {
                                     <div className="title">Log in</div>
                                     <form className="flip-card__form" onSubmit={handleLogin}>
                                         <input className="flip-card__input" name="email" placeholder="Email" type="email" value={userDetails.email} onChange={handleChange} />
-                                        <input className="flip-card__input" name="password" placeholder="Password" type="password" value={userDetails.password} onChange={handleChange} />
+                                        <input className="flip-card__input" name="password" placeholder="Password" type="password" autoComplete="current-password" value={userDetails.password} onChange={handleChange} />
                                         <button className="flip-card__btn" type="submit">Let's go!</button>
                                     </form>
                                 </div>
@@ -80,7 +80,7 @@ const LoginSignupPage = () => {
                                     <form className="flip-card__form" onSubmit={handleRegister}>
                                         <input className="flip-card__input" name="name" placeholder="Name" type="text" value={userDetails.name} onChange={handleChange} />
                                         <input className="flip-card__input" name="email" placeholder="Email" type="email" value={userDetails.email} onChange={handleChange} />
-                                        <input className="flip-card__input" name="password" placeholder="Password" type="password" value={userDetails.password} onChange={handleChange} />
+                                        <input className="flip-card__input" name="password" placeholder="Password" type="password" autoComplete="new-password" value={userDetails.password} onChange={handleChange} />
                                         <button className="flip-card__btn" type="submit">Confirm!</button>
                                     </form>
                                 </div>
