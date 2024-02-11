@@ -5,6 +5,7 @@ import '../assets/css/TempusStyles.css';
 import '../assets/css/flipCardStyles.css';
 import authService from '../services/authService'; // Ensure authService correctly implements register and login functions
 
+
 const LoginSignupPage = () => {
     const [isLoginView, setIsLoginView] = useState(true); // Manages view toggle between login and signup
     const [userDetails, setUserDetails] = useState({
