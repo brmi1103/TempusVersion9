@@ -1,18 +1,15 @@
-// src/App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage'; // Ensure these paths match the location of your page components
+import HomePage from './pages/HomePage';
 import PricingPage from './pages/PricingPage';
 import FeaturesDemoPage from './pages/FeaturesDemoPage';
-import ResourcesAboutContactUsPage from './pages/Resources_AboutContactUsPage'; // Adjust the name if needed
+import ResourcesAboutContactUsPage from './pages/Resources_AboutContactUsPage';
 import LoginSignupPage from './pages/LoginSignupPage';
-import MyTempusDashboardPage from './pages/MyTempusDashboardPage'; // Import your page component
-import BookingPage from './pages/BookingPage'; // Import your BookingPage component
+import LoginSignupPage_Register from './pages/LoginSignupPage_Register'; // Import the new registration page component
+import MyTempusDashboardPage from './pages/MyTempusDashboardPage';
+import BookingPage from './pages/BookingPage';
 
 import './App.css';
-
-// ... any other page imports you may have
 
 const App = () => {
   return (
@@ -23,6 +20,7 @@ const App = () => {
         <Route path="/features-demo" element={<FeaturesDemoPage />} />
         <Route path="/about-contact-us" element={<ResourcesAboutContactUsPage />} />
         <Route path="/login-signup" element={<LoginSignupPage />} />
+        <Route path="/register" element={<LoginSignupPage_Register />} /> {/* Add this line for the new registration route */}
         <Route path="/dashboard" element={<MyTempusDashboardPage />} />
         <Route path="/book-appointment" element={<BookingPage />} />
         {/* Add additional routes as needed */}
